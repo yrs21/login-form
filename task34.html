@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+body{
+background:linear-gradient(90deg,#5ac9e4,#902ae6);
+animation-name:abc;
+animation-duration:2s;
+animation-iteration-count:infinite;
+}
+#box{
+height:430px;
+width:400px;
+background:white;
+margin:70px auto;
+transition:all 2s;
+}
+.form{
+padding:30px;
+}
+.txt{
+width:100%;
+height:40px;
+margin-bottom:10px;
+}
+.btn{
+width:100%;
+height:40px;
+margin-top:20px;
+background:linear-gradient(90deg,#5ac9e4,#902ae6);
+border:none;
+color:white;
+font-weight:bold;
+letter-spacing:3px;
+transition:all 2s;
+}
+p{
+text-align:center;
+font-size:30px;
+font-weight:bold;
+letter-spacing:3px;
+}
+.btn:hover{
+background:conic-gradient(aqua,purple,pink,navy,aqua);
+border-radius:10px;
+font-weight:bold;
+font-size:22px;
+transition:all 2s;
+}
+#box:hover{
+background:radial-gradient(#5ac9e4,#902ae6);
+border-radius:30px;
+box-shadow:0px 0px 4px 4px black;
+border:2px solid red;
+transform:scale(1.1);
+transition:all 2s;
+}
+::placeholder{
+color:#902ae6;
+font-size:16px;
+background:rgba(33,127,712,.3);
+padding:25px;
+}
+@keyframes abc{
+to{
+background:linear-gradient(90deg,#5ac9e4,#902ae6);
+}
+from{
+background:radial-gradient(#f77b1b,#2869a3);
+}
+}
+</style>
+</head>
+<body>
+<div id="box">
+<form class="form">
+<p>Login Form</p>
+Email or Phone<br/>
+<input type="email" required autofocus class="txt" placeholder="Enter your email.."/><br/>
+Password<br/>
+<input type="password" required class="txt" placeholder="Enter your password.."/>
+<span style="color:aqua;">Forget Password ?</span>
+<input type="submit" value="LOGIN" class="btn"/>
+<br/>
+<br/>
+<span style="margin-left:25%;">Not a member?&nbsp;<b style="color:aqua;">Signup now</b></span>
+</form>
+</div>
+</body>
+</html>
+
+
